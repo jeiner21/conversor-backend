@@ -51,4 +51,9 @@ public class CurrencyController {
         return codes.stream().map(codePair -> codePair.get(0)).toList();
     }
 
+    @GetMapping("/ping")
+    public String ping(){
+        return "pong";
+    }
+
 }
